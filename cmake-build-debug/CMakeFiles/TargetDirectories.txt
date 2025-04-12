@@ -1,0 +1,3 @@
+L:/Documents/BCIT/2510/2510-Final-Snippets/cmake-build-debug/CMakeFiles/2510_Final_Snippets.dir
+L:/Documents/BCIT/2510/2510-Final-Snippets/cmake-build-debug/CMakeFiles/edit_cache.dir
+L:/Documents/BCIT/2510/2510-Final-Snippets/cmake-build-debug/CMakeFiles/rebuild_cache.dir
