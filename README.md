@@ -13,25 +13,6 @@
 - [Matrix multiply two 2D arrays](Snippets/Arrays/Array_Matrix_Multiply.c)
 -  **its `arr[ROW][COL]`**
 
-## [Files](Snippets/Files)
-Make sure to close files when done with them
-- `.txt`
-  - Numbers
-    - [Write numbers to `.txt` file](Snippets/Files/File_Numbers_txt_Write.c)
-    - [Read numbers from `.txt` file](Snippets/Files/File_Numbers_txt_Read.c)
-  - Strings
-    - [Write strings to `.txt` file](Snippets/Files/File_Strings_txt_Write.c)
-    - [Read strings from `.txt` file](Snippets/Files/File_Strings_txt_Read.c)
-- `.bin`
-  - Numbers
-    - [Write numbers to `.bin` file](Snippets/Files/File_Numbers_bin_Write.c)
-    - [Read numbers from `.bin` file](Snippets/Files/File_Numbers_bin_Read.c)
-  - Strings
-    - [Write strings to `.bin` file](Snippets/Files/File_Strings_bin_Write.c)
-    - [Read strings from `.bin` file](Snippets/Files/File_Strings_bin_Read.c)
-- TODO: Write strings to `.bin` file
-- TODO: Write variable-length strings to file, separated by `,`s (use `%99[^,]` to get a string of up to length 99 which ends at a comma)'
-
 ## [Linked Lists](Snippets/Linked_List)
 - [Singly Linked List](Snippets/Linked_List/Linked_List_Singly.c)
   - generic linked list
@@ -42,7 +23,41 @@ Make sure to close files when done with them
 - TODO: Doubly Linked List
 - TODO: Circular Linked List
 
+## [Files](Snippets/Files)
+Make sure to close files when done with them
+- `.txt`
+  - Numbers
+    - [Write numbers to `.txt` file](Snippets/Files/File_Numbers_txt_Write.c)
+    - [Read numbers from `.txt` file](Snippets/Files/File_Numbers_txt_Read.c)
+  - Strings
+    - [Write strings to `.txt` file](Snippets/Files/File_Strings_txt_Write.c)
+    - [Read strings from `.txt` file](Snippets/Files/File_Strings_txt_Read.c)
+  - Structs
+    - Write structs to `.txt` file
+    - Read structs from `.txt` file
+- `.bin`
+  - Numbers
+    - [Write numbers to `.bin` file](Snippets/Files/File_Numbers_bin_Write.c)
+    - [Read numbers from `.bin` file](Snippets/Files/File_Numbers_bin_Read.c)
+  - Strings
+    - [Write strings to `.bin` file](Snippets/Files/File_Strings_bin_Write.c)
+    - [Read strings from `.bin` file](Snippets/Files/File_Strings_bin_Read.c)
+  - Structs
+    - Write structs to `.bin` file
+    - Read structs from `.bin` file
+- TODO: Write variable-length strings to file, separated by `,`s (use `%99[^,]` to get a string of up to length 99 which ends at a comma)'
+
 ## [Misc](Snippets/Misc)
+- When taking in args, always check for correct # of args using:
+```C
+if(argc != DESIRED_AMOUNT)
+{
+  fprintf(stderr, "Usage: %s <option> ...\n", argv[0]);
+  return 1;
+}
+```
+- While `#define FOO 37` is useful, Ayesha recommends using `const` values like: `const int FOO = 37;` as they ensure type safety in your IDE.
+- For input buffer clearing, use `while(getchar() != '\n'){}`
 - TODO: Get size of an array
 - TODO: Get size of any multidimensional array
 - Anything else useful???
