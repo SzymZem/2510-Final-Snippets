@@ -21,14 +21,17 @@ int main() {
 }
 
 
-// Function to print the array at each step
+// function to print the array at each step
 void print_array(int arr[], int size) {
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++) {
         printf("%d\t", arr[i]);
-    printf("\n");
+    }
+
+    // spacing
+    puts("");
 }
 
-// Bubble Sort with progress visualization
+// bubble Sort with progress visualization
 void bubble_sort(int arr[], int size) {
     bool swapped;
 
@@ -43,14 +46,14 @@ void bubble_sort(int arr[], int size) {
             // print action before swapping
             printf(" Comparing %d and %d:\t", arr[i], arr[i + 1]);
             if (arr[i] > arr[i + 1]) {
-                // Swap elements
+                // swap elements
                 int temp = arr[i];
                 arr[i] = arr[i + 1];
                 arr[i + 1] = temp;
                 swapped = true;
             }
 
-            // Print current state after each comparison
+            // print current state after each comparison
             print_array(arr, size);
         }
 
