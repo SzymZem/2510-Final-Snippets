@@ -15,8 +15,8 @@
 
 ## [Files](Snippets/Files)
 Make sure to close files when done with them
-- TODO: Write numbers to `.txt` file
-- TODO: Write strings to `.txt` file
+- [Write numbers to `.txt` file](Snippets/Files/File_Numbers_txt.c)
+- [Write strings to `.txt` file](Snippets/Files/File_Strings_txt.c)
 - TODO: Write numbers to `.bin` file
 - TODO: Write strings to `.bin` file
 - TODO: Write variable-length strings to file, separated by `,`s (use `%99[^,]` to get a string of up to length 99 which ends at a comma)'

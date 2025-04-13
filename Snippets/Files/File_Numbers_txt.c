@@ -9,14 +9,14 @@ int main() {
 
     // step 2: Open file for writing
     FILE *file = fopen("output.txt", "w");
-    if (!file) {
+    if(!file) {
         puts("Failed to open file for writing.");
         return 1;
     }
 
     // step 3: Get numbers from user and write them to file
     printf("\n\nEnter %d integers:\n", count);
-    for (int i = 0; i < count; i++) {
+    for(int i = 0; i < count; i++) {
         int num;
         printf("\nNumber %d:\n", i + 1);
         scanf("%d", &num);
