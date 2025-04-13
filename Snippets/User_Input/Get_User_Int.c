@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>   // For atoi()
-#include <ctype.h>    // For isdigit()
-#include <string.h>   // For strlen()
+#include <stdlib.h>   // for atoi()
+#include <ctype.h>    // for isdigit()
+#include <string.h>   // for strcspn()
 
-#define MAX_LEN 100   // Max input length
+#define MAX_LEN 100
 
 int isValidInteger(const char *str);
 

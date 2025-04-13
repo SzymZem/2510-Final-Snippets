@@ -44,5 +44,5 @@ Make sure to close files when done with them
 
 ## [User Input](Snippets/User_Input)
 - [Re-prompt user until they give an int](Snippets/User_Input/Get_User_Int.c)
-- TODO: Re-prompt user until they give a double
+- [Re-prompt user until they give a double](Snippets/User_Input/Get_User_Double.c)
 - TODO: Re-prompt user until they give a valid string (certain length, not empty)
