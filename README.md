@@ -5,7 +5,7 @@
 
 ## [Algorithms](Snippets/Algorithms)
 - [merge sort](Snippets/Algorithms/Merge_Sort.c)
-- TODO: bubble sort
+- [bubble sort](Snippets/Algorithms/Bubble_Sort.c)
 - TODO: quick sort
 - TODO: binary tree
 
