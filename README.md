@@ -4,7 +4,7 @@
 # Table of Contents
 
 ## [Algorithms](Snippets/Algorithms)
-- TODO: merge sort
+- [merge sort](Snippets/Algorithms/Merge_Sort.c)
 - TODO: bubble sort
 - TODO: quick sort
 - TODO: binary tree
