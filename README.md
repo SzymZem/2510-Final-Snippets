@@ -42,5 +42,6 @@ Make sure to close files when done with them
 - Find more strange strings functions in the slides to add examples for
 
 ## [User Input](Snippets/User_Input)
-- TODO: Re-prompt user until they give a number (then ATOI it into an int)
+- [Re-prompt user until they give an int](Snippets/User_Input/Get_User_Int.c)
+- TODO: Re-prompt user until they give a double
 - TODO: Re-prompt user until they give a valid string (certain length, not empty)
