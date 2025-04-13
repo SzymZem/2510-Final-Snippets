@@ -5,7 +5,7 @@
 
 #define MAX_LEN 100
 
-int is_valid_double(const char *str);
+int is_vali0d_double(const char *str);
 
 int main() {
     char input[MAX_LEN];

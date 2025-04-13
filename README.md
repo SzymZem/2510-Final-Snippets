@@ -33,10 +33,10 @@ Make sure to close files when done with them
 - TODO: Circular Linked List
 
 ## [Misc](Snippets/Misc)
-- Anything else useful;
+- Anything else useful???
 
 ## [Strings](Snippets/Strings)
-- TODO: malloc more space when string gets too long
+- [Realloc more space when string gets too long (infinite string length)](Snippets/Strings/String_Infinite_Length.c)
 - [Token to separate strings](Snippets/Strings/String_Token.c)
 - [Copying strings](Snippets/Strings/String_Copying.c)
 - [Replacing words in strings](Snippets/Strings/String_Replace_word.c)
