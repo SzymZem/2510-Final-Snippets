@@ -6,8 +6,7 @@
 ## [Algorithms](Snippets/Algorithms)
 - [merge sort](Snippets/Algorithms/Merge_Sort.c)
 - [bubble sort](Snippets/Algorithms/Bubble_Sort.c)
-- TODO: quick sort
-- TODO: binary tree
+- [quick sort](Snippets/Algorithms/Quick_Sort.c)
 
 ## [Arrays](Snippets/Arrays)
 - TODO: Rotate 2D array
@@ -33,6 +32,8 @@ Make sure to close files when done with them
 - TODO: Circular Linked List
 
 ## [Misc](Snippets/Misc)
+- TODO: Get size of an array
+- TODO: Get size of any multidimensional array
 - Anything else useful???
 
 ## [Strings](Snippets/Strings)
