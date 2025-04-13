@@ -10,8 +10,8 @@
 
 ## [Arrays](Snippets/Arrays)
 - [Rotate 2D array](Snippets/Arrays/Array_Rotate_2D.c)
-- TODO: Matrix multiply two 2D arrays
-- TODO: Is it `arr[ROW][COL]` **its `arr[ROW][COL]`**
+- [Matrix multiply two 2D arrays](Snippets/Arrays/Array_Matrix_Multiply.c)
+-  **its `arr[ROW][COL]`**
 
 ## [Files](Snippets/Files)
 Make sure to close files when done with them
@@ -47,4 +47,4 @@ Make sure to close files when done with them
 - [Re-prompt user until they give an int](Snippets/User_Input/Get_User_Int.c)
 - [Re-prompt user until they give a double](Snippets/User_Input/Get_User_Double.c)
 - [Re-prompt user until they give a valid length string](Snippets/User_Input/Get_User_String.c)
-- Get user to create a 2D array
+- [Get user to create a 2D array](Snippets/User_Input/Get_User_2D_Array.c)
