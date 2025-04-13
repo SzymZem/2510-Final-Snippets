@@ -27,8 +27,8 @@ Make sure to close files when done with them
     - [Write numbers to `.bin` file](Snippets/Files/File_Numbers_bin_Write.c)
     - [Read numbers from `.bin` file](Snippets/Files/File_Numbers_bin_Read.c)
   - Strings
-    - TODO: Write strings to `.bin` file
-    - TODO: Read strings from `.bin` file
+    - [Write strings to `.bin` file](Snippets/Files/File_Strings_bin_Write.c)
+    - [Read strings from `.bin` file](Snippets/Files/File_Strings_bin_Read.c)
 - TODO: Write strings to `.bin` file
 - TODO: Write variable-length strings to file, separated by `,`s (use `%99[^,]` to get a string of up to length 99 which ends at a comma)'
 
