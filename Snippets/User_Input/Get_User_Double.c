@@ -11,6 +11,7 @@ int main() {
     char input[MAX_LEN];
     double number;
 
+    // loop until user enters valid double
     while(1) {
         // prompt user for input & get it
         puts("Enter a decimal number:");

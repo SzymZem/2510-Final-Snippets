@@ -1,13 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
-* Example implementation of a singly linked list
-*
-* @author Szymon Zemojtel
-* @version 1
-*/
-
 struct list_item {
     int number_data;
     struct list_item *next;
