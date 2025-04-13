@@ -2,7 +2,6 @@
 #include <string.h>
 
 #define MAX_LEN 100
-
 #define DELIM " "
 
 int main() {
