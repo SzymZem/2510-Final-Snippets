@@ -47,3 +47,4 @@ Make sure to close files when done with them
 - [Re-prompt user until they give an int](Snippets/User_Input/Get_User_Int.c)
 - [Re-prompt user until they give a double](Snippets/User_Input/Get_User_Double.c)
 - [Re-prompt user until they give a valid length string](Snippets/User_Input/Get_User_String.c)
+- Get user to create a 2D array

@@ -24,7 +24,7 @@ int main() {
 // function to print the array at each step
 void print_array(int arr[], int size) {
     for (int i = 0; i < size; i++) {
-        printf("%d\t", arr[i]);
+        printf("%4d", arr[i]);
     }
 
     // spacing
