@@ -5,7 +5,7 @@
 
 #define MAX_LEN 100
 
-int isValidDouble(const char *str);
+int is_valid_double(const char *str);
 
 int main() {
     char input[MAX_LEN];
@@ -20,7 +20,7 @@ int main() {
         // remove newline (if any)
         input[strcspn(input, "\n")] = '\0';
 
-        if(isValidDouble(input)) {
+        if(is_valid_double(input)) {
             number = atof(input);  // safe to convert now
             break;
         } else {
@@ -34,7 +34,7 @@ int main() {
 
 
 // validates if input string is a valid double (e.g., -12.34, 0.5, 7)
-int isValidDouble(const char *str) {
+int is_valid_double(const char *str) {
     int seenDigit = 0;
     int seenDot = 0;
 

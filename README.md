@@ -39,7 +39,7 @@ Make sure to close files when done with them
 - TODO: malloc more space when string gets too long
 - [Token to separate strings](Snippets/Strings/String_Token.c)
 - [Copying strings](Snippets/Strings/String_Copying.c)
-- TODO: Replacing words in strings
+- [Replacing words in strings](Snippets/Strings/String_Replace_word.c)
 - Find more strange strings functions in the slides to add examples for
 
 ## [User Input](Snippets/User_Input)

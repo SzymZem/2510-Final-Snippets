@@ -5,7 +5,7 @@
 
 #define MAX_LEN 100
 
-int isValidInteger(const char *str);
+int is_valid_integer(const char *str);
 
 int main() {
     char input[MAX_LEN];
@@ -20,7 +20,7 @@ int main() {
         // remove trailing newline character (if its there)
         input[strcspn(input, "\n")] = '\0';
 
-        if(isValidInteger(input)) {
+        if(is_valid_integer(input)) {
             number = atoi(input);  // Safe now, since we validated the string
             break;
         } else {
@@ -34,7 +34,7 @@ int main() {
 
 
 // function to check if a string is a valid integer (only digits, optional leading minus)
-int isValidInteger(const char *str) {
+int is_valid_integer(const char *str) {
 
     // allow negative sign
     if(*str == '-') {

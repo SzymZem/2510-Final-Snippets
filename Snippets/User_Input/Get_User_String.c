@@ -5,7 +5,7 @@
 #define MIN_LEN 3     // Set desired minimum length
 #define MAX_ALLOWED_LEN 20  // Set upper bound for string length
 
-int isValidString(const char *str, int min, int max);
+int is_valid_string(const char *str, int min, int max);
 
 int main() {
     char input[MAX_LEN];
@@ -20,7 +20,7 @@ int main() {
 
         // valid input = break out of loop.
         // invalid input = reprompt and try again
-        if(isValidString(input, MIN_LEN, MAX_ALLOWED_LEN)) {
+        if(is_valid_string(input, MIN_LEN, MAX_ALLOWED_LEN)) {
             break;
         } else {
             puts("\nInvalid input. Please enter a non-empty string of proper length.");
@@ -34,7 +34,7 @@ int main() {
 
 
 // checks if input string is within min/max length requirements
-int isValidString(const char *str, int min, int max) {
+int is_valid_string(const char *str, int min, int max) {
     int len = strlen(str);
 
     // returns true if the input is within min and max lengths
