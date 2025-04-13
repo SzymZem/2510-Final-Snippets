@@ -9,9 +9,9 @@
 - [quick sort](Snippets/Algorithms/Quick_Sort.c)
 
 ## [Arrays](Snippets/Arrays)
-- TODO: Rotate 2D array
+- [Rotate 2D array](Snippets/Arrays/Array_Rotate_2D.c)
 - TODO: Matrix multiply two 2D arrays
-- TODO: Is it arr[ROW][COL] or arr[COL][ROW]???
+- TODO: Is it `arr[ROW][COL]` **its `arr[ROW][COL]`**
 
 ## [Files](Snippets/Files)
 Make sure to close files when done with them
