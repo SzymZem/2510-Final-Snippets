@@ -6,6 +6,7 @@
 ## [Algorithms](Snippets/Algorithms)
 - TODO: merge sort
 - TODO: bubble sort
+- TODO: quick sort
 - TODO: binary tree
 
 ## [Arrays](Snippets/Arrays)
