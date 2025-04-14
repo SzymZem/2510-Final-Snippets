@@ -60,6 +60,7 @@ if(argc != DESIRED_AMOUNT)
 - For input buffer clearing, use `while(getchar() != '\n'){}`
 - TODO: Get size of an array
 - TODO: Get size of any multidimensional array
+- TODO: Random number in range
 - Anything else useful???
 
 ## [Strings](Snippets/Strings)
