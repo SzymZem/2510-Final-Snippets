@@ -1,42 +1,85 @@
+#include <stdbool.h> // For exit status
 #include <stdio.h>
-#include <string.h>   // For strlen(), strcspn()
+#include <string.h> // For strlen() and strchr()
 
 #define MAX_LEN 15
-#define MIN_LEN 3     // Set desired minimum length
-#define MAX_ALLOWED_LEN 20  // Set upper bound for string length
 
-int is_valid_string(const char *str, int min, int max);
 
-int main() {
-    char input[MAX_LEN];
+/**
+ * Like scanf("%s"), but better.
+ *
+ * @return success status (whether input was valid)
+ */
+bool scans(char* str)
+{
+    fgets(str, MAX_LEN, stdin);
 
-    // loop until user inputs valid string
-    while(1) {
-        printf("Enter a valid name (%i-%i characters):\n", MIN_LEN, MAX_LEN);
-        fgets(input, MAX_LEN, stdin);
-
-        // remove newline character (if any)
-        input[strcspn(input, "\n")] = '\0';
-
-        // valid input = break out of loop.
-        // invalid input = reprompt and try again
-        if(is_valid_string(input, MIN_LEN, MAX_ALLOWED_LEN)) {
-            break;
-        } else {
-            puts("\nInvalid input. Please enter a non-empty string of proper length.");
-        }
+    // Find the pointer to the newline character
+    char* EOL = strchr(str, '\n');
+    if (EOL)
+    {
+        *EOL = '\0';
+        return true;
     }
 
-    // print resulting user input
-    printf("You entered: \"%s\"\n", input);
-    return 0;
+    // If not found, it means user entered more characters than allowed
+    // Then clear the input stream.
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF)
+    {
+        // If you don't do this,
+        // the next call to fgets() will read the rest of the line
+        // instead of waiting for new input.
+    }
+
+    // And print error message
+    printf("Maximum %d characters allowed.\n", MAX_LEN);
+    return false;
 }
 
+/**
+ * Like scans(), but also checks for empty string.
+ * Replace the line `if (strlen(str) > 0)` to whatever other condition you like
+ * (e.g. string must have minimum 3 characters, etc.)
+ *
+ * @return success status (whether input was valid)
+ */
+bool scansNonEmpty(char* str)
+{
+    if (!scans(str))
+        return false;
 
-// checks if input string is within min/max length requirements
-int is_valid_string(const char *str, int min, int max) {
-    int len = strlen(str);
+    if (strlen(str) > 0)
+        return true;
 
-    // returns true if the input is within min and max lengths
-    return (len >= min && len <= max);
+    printf("Empty string not allowed.\n");
+    return false;
+}
+
+int main()
+{
+    char input[MAX_LEN];
+    while (1)
+    {
+        printf("Enter a string: ");
+        if (scans(input))
+        {
+            break;
+        }
+    }
+    printf("You entered: \"%s\"\n", input);
+
+
+    char nonEmptyInput[MAX_LEN];
+    while (1)
+    {
+        printf("Enter a non-empty string: ");
+        if (scansNonEmpty(nonEmptyInput))
+        {
+            break;
+        }
+    }
+    printf("You entered: \"%s\"\n", nonEmptyInput);
+
+    return 0;
 }
