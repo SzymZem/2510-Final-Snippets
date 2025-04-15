@@ -50,8 +50,7 @@ Make sure to close files when done with them
 ## [Misc](Snippets/Misc)
 - When taking in args, always check for correct # of args using:
 ```C
-if(argc != DESIRED_AMOUNT)
-{
+if(argc != DESIRED_AMOUNT) {
   fprintf(stderr, "Usage: %s <option> ...\n", argv[0]);
   return 1;
 }
